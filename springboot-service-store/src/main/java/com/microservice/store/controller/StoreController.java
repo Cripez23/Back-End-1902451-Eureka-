@@ -25,13 +25,13 @@ public class StoreController {
 
     @HystrixCommand(fallbackMethod = "metodoGenerico")
     @GetMapping("/celular/{id}/cantidad/{cantidad}")
-    public Store details(@PathVariable Long id, @PathVariable Integer cantidad) {
+    public Store details(@PathVariable Long id,@PathVariable Integer cantidad){
         return storeService.findById(id, cantidad);
     }
 
-    public Store metodoGenerico(Long id, Integer cantidad) {
+    public Store metodoGenerico( Long id, Integer cantidad){
         Store store = new Store();
-        Celular cel = new Celular(id, "El Cel del Profe", "Samsung");
+        Celular cel = new Celular(id, "El Cel de Alef","Xiaomi");
         store.setCantidad(cantidad);
         store.setCel(cel);
 
