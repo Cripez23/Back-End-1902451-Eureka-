@@ -33,15 +33,17 @@ public class CelularController {
             cel.setPort(port);
             return cel;
         }).collect(Collectors.toList());
-
+        
     }
 
     @GetMapping("/celular/{id}")
     public Celular detail(@PathVariable Long id) {
-
-        //boolean bl = false;
-        //if(!bl)
-        	//throw new RuntimeException("No se pudo obtener el detalle del celular");
+        
+        try {
+            Thread.sleep(2000L);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         return service.findById(id);
     }
@@ -53,7 +55,7 @@ public class CelularController {
     }
 
     @PostMapping("/celular")
-    public ResponseEntity<Celular> add(@RequestBody Celular instance) {
+    public ResponseEntity<Celular> add(@RequestBody Celular instance){
         Celular cel = service.save(instance);
         return new ResponseEntity<>(cel, HttpStatus.CREATED);
     }
