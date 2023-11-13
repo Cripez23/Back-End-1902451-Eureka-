@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Cris_\Desktop\BAKC\back\springboot-service-zuul-service"/>
 			<item value="C:\Users\Cris_\Desktop\BAKC\back\springboot-service-store"/>
 			<item value="C:\Users\Cris_\Desktop\BAKC\back\springboot-service-celulares"/>
 			<item value="C:\Users\Cris_\Desktop\BAKC\back\eurekaClient"/>

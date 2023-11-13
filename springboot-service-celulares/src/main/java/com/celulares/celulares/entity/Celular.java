@@ -14,17 +14,17 @@ import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
 @Entity
-@Table(name = "celulares")
+@Table (name = "celulares")
 public class Celular implements Serializable {
 
-    private static final long serialVersionUID = 89823298329L;
+    private static final long serialVersionUID = 9185477254158261887L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
-
+    private String name; 
+ 
     private String marca;
 
     @Column(name = "created_at")

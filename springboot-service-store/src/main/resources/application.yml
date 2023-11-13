@@ -11,8 +11,8 @@ ribbon:
  ConnectTimeout: 3000
  ReadTimeout: 10000
 hystrix:
- command:
-  default:
-   execution:
-    isolation:
-     timeoutInMilliseconds: 20000
+  command:
+    default:
+      execution:
+        isolation:
+        timeoutInMilliseconds: 20000
