@@ -22,6 +22,8 @@
 		<item key="updateTextualMatches" value="false"/>
 		<item key="updateQualifiedNames" value="false"/>
 		<item key="patterns" value="*"/>
+		<item key="updateSimilarElements" value="false"/>
+		<item key="updateSimilarElementsMatchStrategy" value="1"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
 		<item key="pageIndex" value="3"/>
@@ -35,5 +37,8 @@
 	<section name="NewClassWizardPage">
 		<item key="create_constructor" value="false"/>
 		<item key="create_unimplemented" value="true"/>
+	</section>
+	<section name="JavaEditorCodeMiningConfigurationBlock">
+		<item key="expanded0" value="true"/>
 	</section>
 </section>
