@@ -2,6 +2,7 @@ INDEX VERSION 1.134+C:\Users\Cris_\Desktop\BAKC\back\.metadata\.plugins\org.ecli
 86159018.index
 3805575605.index
 2457556158.index
+3215132813.index
 3238146076.index
 2090573627.index
 3100404407.index
@@ -59,7 +60,6 @@ INDEX VERSION 1.134+C:\Users\Cris_\Desktop\BAKC\back\.metadata\.plugins\org.ecli
 3151931196.index
 3508089297.index
 1732287973.index
-2043229891.index
 3373426349.index
 1966043783.index
 1970389230.index
@@ -83,7 +83,6 @@ INDEX VERSION 1.134+C:\Users\Cris_\Desktop\BAKC\back\.metadata\.plugins\org.ecli
 1873959933.index
 2263342428.index
 3468884538.index
-655832527.index
 1508669999.index
 1338949207.index
 3750474869.index
@@ -94,11 +93,11 @@ INDEX VERSION 1.134+C:\Users\Cris_\Desktop\BAKC\back\.metadata\.plugins\org.ecli
 4277971856.index
 1139064855.index
 2026374878.index
-310243563.index
 1965478701.index
 1734036957.index
 467764016.index
 2312618008.index
+1136513690.index
 2821713046.index
 2903335715.index
 4060825873.index
@@ -131,6 +130,7 @@ INDEX VERSION 1.134+C:\Users\Cris_\Desktop\BAKC\back\.metadata\.plugins\org.ecli
 1809144521.index
 985936814.index
 2319443864.index
+445948249.index
 160392241.index
 3573368591.index
 2171405574.index
@@ -194,7 +194,6 @@ INDEX VERSION 1.134+C:\Users\Cris_\Desktop\BAKC\back\.metadata\.plugins\org.ecli
 2972912598.index
 1738193162.index
 2325877919.index
-3246968553.index
 3660353097.index
 2594015436.index
 3770515290.index
@@ -209,9 +208,7 @@ INDEX VERSION 1.134+C:\Users\Cris_\Desktop\BAKC\back\.metadata\.plugins\org.ecli
 808699588.index
 3478353567.index
 1036143699.index
-2111809259.index
 987167930.index
-560583339.index
 1442431591.index
 2808319014.index
 578461688.index
@@ -222,7 +219,6 @@ INDEX VERSION 1.134+C:\Users\Cris_\Desktop\BAKC\back\.metadata\.plugins\org.ecli
 3708007921.index
 1459420774.index
 2523678898.index
-3138867232.index
 1208345226.index
 3096322160.index
 4024194516.index
@@ -257,7 +253,6 @@ INDEX VERSION 1.134+C:\Users\Cris_\Desktop\BAKC\back\.metadata\.plugins\org.ecli
 3344784313.index
 3344032565.index
 850868947.index
-2654377907.index
 4002487537.index
 4214563223.index
 829745864.index
