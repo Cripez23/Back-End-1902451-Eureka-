@@ -24,10 +24,10 @@ public class SpringbootServiceOauthApplication implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		String pss = "12345";
 		
-		for(int i = 0; i < 2; i++) {
-			String passCry = passEncoder.encode(pss);
-			System.out.print(passCry);
-		}
+		//for(int i = 0; i < 2; i++) {
+		//	String passCry = passEncoder.encode(pss);
+		//	System.out.print(passCry);
+		//}
 	}
 
 }
