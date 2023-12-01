@@ -18,35 +18,35 @@ import com.microservice.commons.users.entity.Usuario;
 import com.microservice.oauth.client.UsuarioFeignClient;
 
 @Service
-public class UsuarioService implements UserDetailsService{
-	
+public class UsuarioService implements UserDetailsService, IUsuarioService{
+
 	private Logger log = LoggerFactory.getLogger(UsuarioService.class);
-	
+
 	@Autowired
 	private UsuarioFeignClient client;
-	
+
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		
+
 		Usuario user = client.findByUsername(username);
-		
+
 		if(user==null) {
 			log.error("Error en el login, no existe el usuario. " + username);
 			throw new UsernameNotFoundException("Error en el login, no existe el usuario. " + username);
 		}
-		
+
 		List<GrantedAuthority> authorities = user.getRoles()
 				.stream()
 				.map(role -> new SimpleGrantedAuthority(role.getNombre()))
 				.peek(authority -> log.info("Role: " + authority.getAuthority()))
 				.collect(Collectors.toList());
-		
+
 		log.info("Usuario autenticado: " + username);
-		
-		
+
+
 		return new User(user.getUsername(), user.getPassword(), user.getEnabled(), true, true, true, authorities);
 	}
-	
+
 	public Usuario findByUsername(String username) {
 		return client.findByUsername(username);
 	}
