@@ -43,17 +43,18 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 		clients.inMemory().withClient("backEndApp")
 		.secret(passwordEncoder.encode("contra123"))
 		.scopes("read", "write")
-		.authorizedGrantTypes("password", "refres_token")
+		.authorizedGrantTypes("password", "refresh_token")
 		.accessTokenValiditySeconds(3600)
 		.refreshTokenValiditySeconds(3600);
 	}
 
 	@Bean
-	private JwtTokenStore jwtTokenStore() {
+	public JwtTokenStore jwtTokenStore() {
 		return new JwtTokenStore(jwtAccessTokenConverter());
 	}
 	
-	private JwtAccessTokenConverter jwtAccessTokenConverter() {
+	@Bean
+    public JwtAccessTokenConverter jwtAccessTokenConverter() {
 		JwtAccessTokenConverter tokenConverter = new JwtAccessTokenConverter();
 		tokenConverter.setSigningKey("llave_belica_4x4");
 		return tokenConverter;

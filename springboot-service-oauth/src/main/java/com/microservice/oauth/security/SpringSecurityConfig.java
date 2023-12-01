@@ -20,9 +20,9 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		auth.userDetailsService(this.usuarioService).passwordEncoder(passwordEncoder());
 	}
-	
-	@Bean
-	private BCryptPasswordEncoder passwordEncoder() {
+
+    @Bean
+    BCryptPasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 		
 	}

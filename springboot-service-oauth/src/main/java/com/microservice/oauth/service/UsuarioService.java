@@ -12,10 +12,12 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
 import com.microservice.commons.users.entity.Usuario;
 import com.microservice.oauth.client.UsuarioFeignClient;
 
+@Service
 public class UsuarioService implements UserDetailsService{
 	
 	private Logger log = LoggerFactory.getLogger(UsuarioService.class);
@@ -29,7 +31,7 @@ public class UsuarioService implements UserDetailsService{
 		Usuario user = client.findByUsername(username);
 		
 		if(user==null) {
-			log.error("Erro en el login, no existe el usuario. " + username);
+			log.error("Error en el login, no existe el usuario. " + username);
 			throw new UsernameNotFoundException("Error en el login, no existe el usuario. " + username);
 		}
 		
@@ -43,6 +45,10 @@ public class UsuarioService implements UserDetailsService{
 		
 		
 		return new User(user.getUsername(), user.getPassword(), user.getEnabled(), true, true, true, authorities);
+	}
+	
+	public Usuario findByUsername(String username) {
+		return client.findByUsername(username);
 	}
 
 }
